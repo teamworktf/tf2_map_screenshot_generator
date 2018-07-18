@@ -14,7 +14,7 @@ class MapStatsCoordinator(object):
 
 	def helperNormalizeMapName(self, name):
 		if name == None:
-		return None
+			return None
 
 		match = re.search(self.re_map_name_normalizer, name)
 		normalized_to_end_name = name
